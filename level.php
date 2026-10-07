@@ -16,18 +16,22 @@ $heroMM = [
     "damage" => [3000, 2000],
 ];
 
-echo $heroMM["damage"][0]; // Output: 3000
+echo $heroMM["damage"][0]; 
+echo "<br />";
+// Output: 3000
 // var_dump($heroMM);
 //indeks dimulai dari 0
-$heroMM = [
-    "Lesley",
-    "Wanwan",
-    "Claude",
-    "Granger",
-];
+//$heroMM = [
+  //  "Lesley" => "truedamage",
+    //"Wanwan" => "mobility",
+    //"Claude" => "support",
+    //"Granger" => "ranged",
+//];
 
-echo $heroMM[4];
+//echo $heroMM["Granger"]; // Output: ranged
 // var_dump($heroMM);
+
+
 $heroMM = [
     "name" => ["Lesley", "Wanwan"],
     "type" => ["truedamage", "mobility"],
@@ -40,5 +44,6 @@ foreach ($heroMM as $key => $value) {
         echo $val;
         echo "<br />";
     }
+    //echo $heroMM[$key][1];
     echo "<br />";
 }
